@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Form</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		fieldset {
+			margin-bottom: 20px;
+		}
+
+		button,
+		#reset {
+			padding: 10px 20px;
+			margin-right: 40px;
+			border-radius: 10px;
+			border: none;
+			background-color: gray;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+
+	</header>
+	<main>
+		<h1>Please fill up the form</h1>
+		<form>
+			<label for="name">Your Name:
+				<input type="text" id="name" name="name" placeholder="Your Name">
+			</label>
+			<label for="email">Your Email:
+				<input type="text" id="email" name="email" placeholder="Your Email">
+			</label>
+			<label for="email">Your Phone:
+				<input type="text" id="phone" name="phone" placeholder="Your Phone">
+			</label>
+			<fieldset>
+				<legend>Please select one service from below</legend>
+				<label for="accomodation">
+					<input type="radio" name="service">Accomodation
+				</label>
+				<label for="food">
+					<input type="radio" name="service">Food
+				</label>
+				<label for="transport">
+					<input type="radio" name="service">Transport
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>
+					Select as many as you need
+				</legend>
+				<label for="assistant"><input type="checkbox" name="" id="assistant">Personal Assistant</label>
+				<label for="oncall"><input type="checkbox" name="" id="oncall">On Call Support</label>
+				<label for="prohelf"><input type="checkbox" name="" id="prohelf">Professional Assistant</label>
+
+			</fieldset>
+			<fieldset>
+				<legend>Special Instruction</legend>
+				<textarea name="spcial_instructio" id="spcial_instruction" rows="4" cols="100%"></textarea>
+
+			</fieldset>
+			<input type="reset" value="Clear all" name="reset" id="reset">
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+	<footer>
+
+	</footer>
+</body>
+
+</html>
